@@ -1,0 +1,57 @@
+/**{
+	border: 1px solid red !important;
+}*/
+
+body{
+	background-image: url(back2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.content, .quote{
+	text-align: center;
+	margin: 0 auto;
+	padding: 0px;
+	background-color: rgba(100, 157, 253, 0.5);
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-radius: 15px;
+}
+
+.quote{
+	font-family: 'Playfair Display', serif;
+	color: white;
+	font-weight: 400;
+	font-size: 20px;
+}
+
+h1, h3{
+	color: white;
+}
+
+.nav{
+	text-align: center;
+	padding: 100px;
+}
+.button{
+	background-color: #e6ac00;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    /*text-align: center;*/
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 20px;
+    /*cursor: pointer;*/
+}
+
+
+
+.bottom{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	display: block;
+	color: white;
+}
