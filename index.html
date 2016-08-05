@@ -2,43 +2,123 @@
 <html>
 <head>
 	<title>Oleksandr Sofishchenko</title>
-	<meta charset="UTF-8">
-	<link rel="stylesheet" type="text/css" href="index.css">
-	<link rel="stylesheet" type="text/css" href="animate.css">
-	<link href='https://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
-	<link rel="icon" href="favicon.png">
-	<!-- Adding new framework -->
+	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="icon" href="favicon.png">
 </head>
 <body>
-	<div class="content">
-		<div class="myName">
-			<h1>Oleksandr Sofishchenko</h1>
-			<h3>BS Computer Engineering, Texas A&amp;M University<h3>
+	<!-- Navbar (fixed on top) -->
+	<div class="w3-top">
+		<ul class="w3-navbar w3-center w3-large w3-text-white" id="myNavbar">
+			<li style="width:100%"><a href="#" class="w3-padding-large">HOME</a></li>
+		</ul>
+	</div>
+
+	<!-- First Image with Logo Text -->
+	<div class="img-1 w3-display-container">
+		<div class="w3-display-middle w3-text-white w3-animate-opacity" style="text-align:center;">
+			<span class="w3-xxlarge">Oleksandr Sofishchenko</span>
+			<br>
+			<span class=" w3-xlarge w3-hide-small">BS Computer Engineering, Texas A&amp;M University</span>
 		</div>
 	</div>
 
-	<section class="nav">
-		<a href="Oleksandr_Sofishchenko_resume.pdf" class="button animated bounceInLeft" target="_blank" id="hover">Résumé</a>
-		<a href="https://github.com/UkrainianProgrammer" class="button animated bounceInLeft">My GitHub</a>
-		<!--<a href="ee_projects.html" class="button animated bounceInLeft">EE Projects</a>-->
-		<a href="contact.html" class="button animated bounceInLeft">Contact Me</a>
-	</section>
-
-	<div class="w3-container w3-section w3-blue w3-center w3-light-blue">
-		<span onclick="this.parentElement.style.display='none'" class="w3-closebtn">&times;</span>
-  			<h3>Info!</h3>
- 			<p class="w3-text-white w3-large">A new version of my website is under development!</p>
-	</div>
-
-	<section>
-		<div class="quote">
-			Amateur software developer and project enthusiast dedicated to thinking big!
+	<!-- Container for About Section -->
+	<div class="w3-content w-3container w3-padding-64" id="about">
+		<h3 class="w3-center">ABOUT ME</h3>
+		<p class="w3-center"><em>Amateur software developer and project enthusiast dedicated to thinking big!</em>
+		</p>
+		<div class="w3-section w3-center w3-row">
+			<img src="my_resume.png" style="width:100%" alt="My Resume" class="w3-border">
+			<a class="w3-btn" href="Oleksandr_Sofishchenko_resume.pdf" target="_blank"style="margin-top:16px">Download</a>
 		</div>
-	</section>
-	<div class="bottom">
-		&copy Oleksandr Sofishchenko
 	</div>
 
+	<!-- Second Image with Portfolio Text -->
+	<div class="img-2 w3-display-container">
+		<div class="w3-display-middle" style="text-align:center;">
+			<span class="w3-xxlarge w3-wide w3-text-light-grey">PORTFOLIO</span>
+			<br>
+		</div>
+	</div>
+
+	<!-- Container for Portfolio Section -->
+	<div class="w3-content w3-container w3-padding-64">
+		<h3 class="w3-center">SELECTED PROJECTS</h3>
+		<p class="w3-center"><em>For more projects, check out my <a href="https://github.com/UkrainianProgrammer" target="_blank">GitHub page</a>.</em></p>
+
+		<!-- Responsive Grid. Will stack on mobile devices/small screens 
+		(100% width) -->
+		<div class="w3-row-padding w3-center">
+			<div class="w3-col m4">
+				<p>The Pink Panther cartoon videos from YouTube using YouTube Data API.</p>
+				<img src="pink.jpg" alt="PinkPantherApp" class="w3-hover-opacity w3-border" style="width:100%">
+			</div>
+
+			<div class="w3-col m4">
+				<p>Demonstrating serial parsing in action to control LEDs with Arduino Uno.</p>
+				<img src="arduino.jpg" alt="Arduino Parsing" class="w3-hover-opacity w3-border" style="width:100%" rotate="180">
+			</div>
+
+			<div class="w3-col m4">
+				<p>A set of custom responsive pages designed using HTML5 and CSS3.</p>
+				<img src="table.jpg" alt="Mockup" class="w3-hover-opacity w3-border" style="width:100%">
+			</div>
+		</div>
+	</div>
+
+	<!-- Third Image with Contact Text -->
+	<div class="img-3 w3-display-container">
+		<div class="w3-display-middle">
+			<span class="w3-xxlarge w3-wide w3-text-dark-grey">CONTACT</span>
+			<br>
+		</div>
+	</div>
+
+	<!-- Container for Contact Section -->
+	<div class="w3-container w3-content w3-padding-64">
+		<h3 class="w3-center">Find Me at Texas A&amp;M University!</h3>
+		<p class="w3-center"><em>Got questions? Just ask.</em></p>
+
+		<div class="w3-row w3-padding-32 w3-section">
+			<div class="w3-col m4 w3-container">
+				<!-- Add Google Maps -->
+				<div id="googleMap" class="w3-round-large"></div>
+			</div>
+			<div class="w3-col m8 w3-container w3-section">
+				<div class="w3-large w3-margin-bottom">
+					<i class="fa fa-map-marker" style="width:30px"></i> College Station, TX <br>
+					<i class="fa fa-phone" style="width:30px"></i> +1 (832)-240-6884 <br>
+					<i class="fa fa-envelope" style="width:30px"></i> Email: insten490@gmail.com <br>
+				</div>
+				
+				<div class="w3-row-padding" style="margin:0 -25px 10px -25px">
+					<div class="w3-half">
+						<img src="tamu_logo.png" alt="logo" style="width:100%">
+					</div>
+					<div class="w3-half" style="margin-top:37px">
+						<img src="csce_logo.png" alt="logo" style="width:100%">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Add Google Maps -->
+	<script src="http://maps.googleapis.com/maps/api/js"></script>
+	<script src="map.js"></script>
+
+	<!-- Change style of navbar on scroll -->
+	<script src="navbar_style.js"></script>
+
+	<!-- Footer -->
+	<footer class="w3-center w3-dark-grey w3-padding-48 w3-hover-blck">
+		<p>&copy Oleksandr Sofishchenko <br>
+		This website is built using <a href="http://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a> framework.
+		</p>
+	</footer>
 </body>
 </html>
