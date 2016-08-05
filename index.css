@@ -1,57 +1,54 @@
-/**{
-	border: 1px solid red !important;
-}*/
+/*Adding style to existing content*/
 
-body{
-	background-image: url(back2.jpg);
+body, h1, h2, h3, h4, h5, h6{
+	font-family: 'Lora', serif;
+}
+
+body, html{
+	height: 100%;
+	color: #777;
+	line-height: 1.8;
+}
+/*Creating a Parallax Effect*/
+.img-1, .img-2, .img-3{
+	opacity: 0.6;
+	background-attachment: fixed;
+	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
-.content, .quote{
-	text-align: center;
-	margin: 0 auto;
-	padding: 0px;
-	background-color: rgba(100, 157, 253, 0.5);
-	padding-top: 20px;
-	padding-bottom: 20px;
-	border-radius: 15px;
+/*First Image (Logo, Full Height)*/
+.img-1{
+	background-image: url("flag.jpg");
+	min-height: 100%;
 }
 
-.quote{
-	font-family: 'Playfair Display', serif;
-	color: white;
-	font-weight: 400;
-	font-size: 20px;
+/*Second Image (Portfolio)*/
+.img-2{
+	background-image: url(code_portfolio.jpg);
+	min-height: 400px;
 }
 
-h1, h3{
-	color: white;
+/*Third Image (Contact)*/
+.img-3{
+	background-image: url(contact_1.jpg);
+	min-height: 400px;
 }
 
-.nav{
-	text-align: center;
-	padding: 100px;
-}
-.button{
-	background-color: #e6ac00;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    /*text-align: center;*/
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 20px;
-    /*cursor: pointer;*/
-}
+.w3-hover-opacity{ cursor: pointer; }
 
-
-
-.bottom{
-	position: fixed;
-	bottom: 0;
+/*Google Map Dataa*/
+#googleMap{
 	width: 100%;
-	display: block;
-	color: white;
+	height: 400px;
+	-webkit-filter:grayscale(90%);
+	filter: grayscale(90%);
+}
+
+/*Turn off parallax scrolling for tablets and mobiles*/
+@media only screen and (max-width: 1024px){
+	.img-1, .img-2, .img-3{
+		background-attachment: scroll;
+	}
 }
