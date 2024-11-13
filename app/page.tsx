@@ -1,3 +1,5 @@
+"use client";
+
 import Experience from "@/components/Experience";
 import Feedback from "@/components/Feedback";
 import Footer from "@/components/Footer";
@@ -9,7 +11,7 @@ import { navItems } from "@/data";
 import { footer } from "framer-motion/client";
 import { FaHome } from "react-icons/fa";
 
-export default function Home() {
+const Home = () => {
   return (
     <main className="relative bg-black-100 flex justify-center 
       items-center flex-col mx-auto sm:px-10 px-5 overflow-clip">
@@ -27,3 +29,5 @@ export default function Home() {
     </main>
   );
 }
+
+export default Home;

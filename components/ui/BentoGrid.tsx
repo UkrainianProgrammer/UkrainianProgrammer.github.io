@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { IoCopyOutline } from "react-icons/io5";
 
 // Also install this npm i --save-dev @types/react-lottie
@@ -57,6 +57,7 @@ export const BentoGridItem = ({
   const rightLists = ["Python", "Docker", "PostgreSQL"];
 
   const [copied, setCopied] = useState(false);
+  const [triggerGifonCopy, setTriggerGifonCopy] = useState(false);
 
   const defaultOptions = {
     loop: copied,
@@ -71,6 +72,10 @@ export const BentoGridItem = ({
     const text = "olek7dev@gmail.com";
     navigator.clipboard.writeText(text);
     setCopied(true);
+    setTriggerGifonCopy(true);
+    setTimeout(() => {
+      setTriggerGifonCopy(false);
+    }, 1500);
   };
 
   return (
@@ -180,8 +185,12 @@ export const BentoGridItem = ({
                 className={`absolute -bottom-5 right-0 ${copied ? "block" : "block"
                   }`}
               >
-                {/* <img src="/confetti.gif" alt="confetti" /> */}
-                <Lottie options={defaultOptions} height={200} width={400} />
+                {triggerGifonCopy && (
+                    <div suppressHydrationWarning>
+                        <img src="/confetti.gif" alt="confetti" height={200} width={400} />
+                    </div>
+                )}
+                {/* <Lottie options={defaultOptions} height={200} width={400} /> */}
               </div>
 
               <MagicButton
