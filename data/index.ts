@@ -18,7 +18,6 @@ export const gridItems = [
     spareImg: "",
   },
   {
-    // TODO: maybe change this to something better
     id: 2,
     title: "I am a self-starter, fast learner and capable of tackling any challenge.",
     description: "",
