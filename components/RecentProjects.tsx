@@ -77,7 +77,7 @@ const RecentProjects = () => {
                             href={link || "/"}
                             target="_blank"
                             >
-                                <img src={img} alt={name} className='md:w-16 w-5' />
+                                <img src={img} alt={name} className='md:w-16 w-11' />
                             </Link>
                     </div>
                 ))}
