@@ -167,7 +167,7 @@ export const workExperience = [
     title: "Back-end Software Engineer",
     desc: "Developed and maintained a scalable RESTful API serving as the backbone for multiple front-end applications utilized by over 3,000 customers along the United States-Mexico border.",
     className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/tti_dark.png",
+    thumbnail: "/tti_light.svg",
   },
   {
     id: 2,
