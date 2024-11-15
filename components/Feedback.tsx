@@ -1,7 +1,7 @@
 import { testimonials } from '@/data'
 import React from 'react'
 import { InfiniteMovingCards } from './ui/InfiniteMovingCards'
-
+// TODO: replace with the animated ones https://ui.aceternity.com/components/animated-testimonials
 const Feedback = () => {
   return (
     <div className='py-20' id='testimonials'>
